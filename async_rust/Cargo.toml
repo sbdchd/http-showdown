@@ -1,0 +1,30 @@
+[package]
+name = "async_rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axum = "0.5.16"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0.68"
+tracing = "0.1.36"
+tokio = { version = "1.21.1", features = ["full"] }
+tracing-subscriber = "0.3.15"
+axum-extra = { version = "0.3.7", features = ["cookie"] }
+sqlx = { version = "0.6", features = [ "postgres", "runtime-tokio-rustls", "chrono"] }
+chrono = { version = "0.4.22", features = ["serde"] }
+tokio-postgres = { version = "0.7.7", features = ["with-chrono-0_4"] }
+bb8 = "0.7.1"
+bb8-postgres = "0.7.0"
+anyhow = "1.0.65"
+postgres-native-tls = "0.5.0"
+native-tls = "0.2.10"
+tower-http = { version = "0.3.4", features = ["trace"] }
+dotenvy = "0.15.5"
+tower-request-id = "0.2.0"
+http = "0.2.8"
+hyper = "0.14.20"
+
+
